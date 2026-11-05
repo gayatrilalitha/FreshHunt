@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "./components/header";
 import Menu from "./components/menu";
 import ProductCard from "./components/productCard.jsx";
+import Footer from "./components/footer.jsx";
 
 import products from "./data/products";
 
@@ -70,6 +71,7 @@ function App() {
   );
 
   return (
+    <>
     <div className="app">
 
       <Header cartCount={cartCount} />
@@ -111,7 +113,9 @@ function App() {
 
       </div>
 
-    </div>
+     </div>
+     <Footer/>
+    </>
   );
 }
 
